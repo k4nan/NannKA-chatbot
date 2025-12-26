@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Manganingumah</title>
+    <style>
+        /* --- PALET WARNA & SETTING UMUM --- */
+        :root {
+            --bg-soft-white: #F9F8F3; /* Putih tulang lembut */
+            --text-soft-black: #333333; /* Hitam arang, tidak pekat */
+            --accent-brown: #5D4037; /* Cokelat tua untuk judul */
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-soft-white);
+            color: var(--text-soft-black);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .menu-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff; /* Sedikit lebih terang dari bg utama agar pop-up */
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 15px;
+        }
+
+        /* --- HEADER --- */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--accent-brown);
+            padding-bottom: 20px;
+        }
+
+        h1.brand-name {
+            font-family: 'Times New Roman', serif;
+            font-size: 3em;
+            margin: 0;
+            color: var(--text-soft-black);
+            letter-spacing: 2px;
+        }
+
+        .slogan {
+            color: var(--accent-brown);
+            font-weight: bold;
+            margin-top: 5px;
+            font-size: 1.2em;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* --- LAYOUT KOLOM --- */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dua kolom */
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr; /* Satu kolom di HP */
+            }
+        }
+
+        /* --- KATEGORI & ITEM MENU --- */
+        h2.category-title {
+            color: var(--accent-brown);
+            border-bottom: 1px solid var(--accent-brown);
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .desc {
+            font-size: 0.85em;
+            font-style: italic;
+            color: #666;
+            margin-top: -5px;
+            margin-bottom: 10px;
+        }
+
+        /* --- GAYA FOTO MAKANAN --- */
+        .food-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 3px solid #fff;
+        }
+        
+        .featured-image {
+             height: 250px; /* Gambar utama lebih besar */
+        }
+
+        .small-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            float: right;
+            margin-left: 10px;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: var(--accent-brown);
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <header>
+        <h1 class="brand-name">manganingumah</h1>
+        <div class="slogan">MAKAN ENAK & MURAH</div>
+        <div class="contact-info">
+            Jl. Sutawinangun No.7 Pecilon, Cirebon 45153 <br>
+            WA: 08789-789-0789 | IG: @manganingumah
+        </div>
+    </header>
+
+    <div class="menu-grid">
+        <div class="column-left">
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\ayam kendil paha.jpg" alt="Ayam Kendil" class="food-image featured-image">
+
+            <h2 class="category-title">ANEKA AYAM & CEKER</h2>
+            <div class="menu-item"><span>Ayam Kendil Dada/Paha</span><span class="price">15.000</span></div>
+            
+            <div class="menu-item" style="margin-top:15px;"><span>Ayam Goreng Dada/Paha</span><span class="price">14.000</span></div>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\ayam goreng fiks.png" alt="Ayam Goreng" class="food-image" style="height: 150px;">
+
+            <div class="menu-item"><span>Ayam Bakar Dada/Paha</span><span class="price">14.000</span></div>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\ayam bakar fiks.png" alt="Ayam Bakar" class="food-image" style="height: 150px;">
+
+            <div class="menu-item"><span>Ceker Meledag</span><span class="price">12.000</span></div>
+
+            <h2 class="category-title">MENU SPESIAL MINGGUAN</h2>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\makanan\cumi oseng manu spesial.png" alt="Cumi Goreng Manu" class="food-image">
+            <div class="menu-item"><span>Cumi Goreng Manu (Kamis & Jumat)</span><span class="price">25.000</span></div>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\makanan\pindang kerang menu spesial.png" alt="Pindang Kerang Dara" class="food-image">
+            <div class="menu-item"><span>Pindang Kerang Dara (Sabtu & Minggu)</span><span class="price">20.000</span></div>
+
+            <h2 class="category-title">NASI GORENG & MIE</h2>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\nasi goreng manu komplit.jpg" alt="Nasi Goreng Manu Komplit" class="food-image">
+            <div class="menu-item"><span>Nasi Goreng Original</span><span class="price">14.000</span></div>
+            <div class="menu-item"><span>Nasi Goreng Telur</span><span class="price">19.000</span></div>
+            <div class="menu-item"><span>Nasi Goreng Teri</span><span class="price">19.000</span></div>
+            <div class="menu-item"><span>Nasi Goreng Manu (Komplit)</span><span class="price">24.000</span></div>
+            <div class="desc">Telur + Teri + Ayam Suwir</div>
+            <div class="menu-item"><span>Indomie Goreng/Kuah Manu</span><span class="price">12.000</span></div>
+        </div>
+
+        <div class="column-right">
+            <h2 class="category-title" style="margin-top: 0;">GUDEG Meledag</h2>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\gudeg meledag komplit.jpg" alt="Nasi Gudeg Komplit" class="food-image featured-image">
+            <div class="menu-item"><span>Nasi Gudeg Meledag</span><span class="price">20.000</span></div>
+            <div class="menu-item"><span>Nasi Gudeg Meledag + Telur</span><span class="price">25.000</span></div>
+            <div class="menu-item"><span>Nasi Gudeg Meledag Komplit</span><span class="price">30.000</span></div>
+
+            <h2 class="category-title">PAKET HEMAT</h2>
+            <div class="menu-item" style="background-color: #f0ece6; padding: 10px; border-radius: 8px;">
+                <span style="font-weight: bold; color: var(--accent-brown);">PAKET NASI AYAM (Kendil/Bakar/Goreng)</span>
+                <span class="price">30.000</span>
+            </div>
+            <div class="desc" style="padding-left: 10px;">Nasi + Ayam + Tahu/Tempe + Sayur (Asem/Lodeh) + Lalap + Sambal + Es Teh Manis</div>
+
+            <h2 class="category-title">SAYUR & TUMISAN</h2>
+            <div class="menu-item"><span>Sayur Asem / Sayur Lodeh</span><span class="price">5.000</span></div>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\sayur asem.jpg" alt="Sayur Asem / Sayur Lodeh" class="food-image featured-image">
+            <div class="menu-item"><span>Oseng Kangkung / Toge</span><span class="price">11.000</span></div>
+            <div class="menu-item"><span>Karedok Leunca / Pencok Kacang</span><span class="price">11.000</span></div>
+            <div class="menu-item"><span>Oseng Terong Teri</span><span class="price">13.000</span></div>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\oseng terong teri.jpg" alt="Oseng Terong Teri" class="food-image featured-image">
+
+            <h2 class="category-title">PELENGKAP</h2>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\nasi.jpg" alt="Nasi Putih" class="small-image">
+            <div class="menu-item"><span>Nasi Putih</span><span class="price">6.000</span></div>
+            <div style="clear: both;"></div> <div class="menu-item"><span>Tahu / Tempe (1 pcs)</span><span class="price">2.500</span></div>
+            <div class="menu-item"><span>Telur (Mata Sapi/Dadar)</span><span class="price">5k / 6k</span></div>
+            <div class="menu-item"><span>Telur Ceplok Kecap Pontianak</span><span class="price">8.000</span></div>
+            
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\krupuk.jpg" alt="Kerupuk" class="small-image" style="margin-top: 10px;">
+            <div class="menu-item"><span>Aneka Sambal</span><span class="price">3.500</span></div>
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\sambal terasi.jpg" alt="Aneka Sambal" class="small-image">
+            <img src="C:\Users\lilln\Desktop\manganingumah\daftar menu\menu manganingumah\Makanann\sambal galunggung.jpg" alt="Aneka Sambal" class="small-image">
+            <div class="desc">Dadak Terasi / Seruit / Galunggung</div>
+            <div style="clear: both;"></div>
+
+            <h2 class="category-title">CEMILAN</h2>
+            <div class="menu-item"><span>Kentang Goreng+Sosis+Nugget</span><span class="price">25.000</span></div>
+            <div class="menu-item"><span>Tahu Cabe Garam</span><span class="price">15.000</span></div>
+            <div class="menu-item"><span>Pisang / Singkong Goreng</span><span class="price">12.000</span></div>
+            <div class="menu-item"><span>Gehu (Tahu Isi)</span><span class="price">12.000</span></div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Manganingumah - Cirebon. | Harga dapat berubah sewaktu-waktu.
+    </footer>
+</div>
+
+</body>
+</html>
