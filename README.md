@@ -13,13 +13,13 @@ Chatbot ini memiliki fitur autentikasi lengkap, tingkatan membership, pengenalan
 * **💎 Sistem Membership:** Tiering akun (Guest, SD, SMP, SMA/Unlimited) dengan batasan kuota chat harian.
 * **🎙️ Interaksi Multimedia:** Mendukung input **Suara (Voice-to-Text)** dan **Upload Gambar/Dokumen**.
 * **☁️ Widget Cuaca Real-time:** Menampilkan suhu, kelembapan, dan curah hujan khusus kota **Cirebon** (via Open-Meteo API).
-* **💾 Database Persisten:** Riwayat chat tersimpan permanen untuk member menggunakan **SQLite**.
+* **💾 Database Persistem:** Riwayat chat tersimpan permanen untuk member menggunakan **SQLite**.
 
 ## 🛠️ Teknologi yang Digunakan
 
-* **Bahasa:** Python 3.x
+* **Bahasa:** Python 3.13.9
 * **Framework UI:** Streamlit
-* **AI Core:** Google Gemini 1.5 Flash
+* **AI Core:** Google gemini-2.5-flash
 * **Database:** SQLite3
 * **Fitur Lain:** `smtplib` (Email), `mic-recorder` (Audio), `requests` (API Cuaca).
 
