@@ -4,8 +4,7 @@
 
 Chatbot ini memiliki fitur autentikasi lengkap, tingkatan membership, pengenalan suara, analisis gambar, dan widget cuaca real-time.
 
-![Tampilan Chatbot](https://via.placeholder.com/800x400?text=Screenshot+Aplikasi+NannKA)
-*(Ganti link di atas dengan link gambar screenshot asli setelah diupload)*
+[tampilan chatbot](https://drive.google.com/file/d/16MiVu5a5x0KOLO7B-cu_5nOhOkPsXLT3/view?usp=sharing)
 
 ## ✨ Fitur Unggulan
 
